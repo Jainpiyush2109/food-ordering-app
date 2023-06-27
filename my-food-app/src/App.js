@@ -1,11 +1,13 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Header from './component/Header';
+import Meals from './component/Meal/meals';
 
 function App() {
   return (
-    <div className="App">
-      <h1>hello
-      </h1>
+    <div className='app'>
+      <Header></Header>
+      <Meals></Meals>
     </div>
   );
 }
