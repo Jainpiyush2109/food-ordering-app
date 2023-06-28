@@ -2,10 +2,10 @@ import React from "react";
 import CartIcon from "./CartIcon";
 import './cartButton.css'
 
-function CartButton () {
+function CartButton (props) {
 
     return(
-        <button className="button">
+        <button className="button" onClick={props.showCart}>
             <span className="icon">
                 <CartIcon/>
             </span>

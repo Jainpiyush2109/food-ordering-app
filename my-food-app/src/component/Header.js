@@ -5,7 +5,7 @@ import './Header.css'
 import image from '../Assets/food.jpg'
 import CartButton from "./cartButton/cartbutton";
 
-function Header() {
+function Header(props) {
 
     return (
 
@@ -13,7 +13,7 @@ function Header() {
             <header className="header">
             <h1>React Meal App
             </h1>
-            <CartButton></CartButton>
+            <CartButton showCart = {props.showCart}></CartButton>
             </header>
             
             
