@@ -4,6 +4,7 @@ import Header from './component/Header';
 import Meals from './component/Meal/meals';
 import Cart from './component/CartItem/cart';
 import { useState } from 'react';
+import CartProvider from './store/CartProvider';
 
 function App() {
 
@@ -13,12 +14,12 @@ function App() {
       setcartshow(!cartshow);
   }
   return (
-    <div className='app'>
+    <CartProvider >
       {cartshow && <Cart closeCart={cartshowHandler} />}
       <Header showCart = {cartshowHandler}></Header>
       <Meals></Meals>
       
-    </div>
+    </CartProvider>
   );
 }
 
